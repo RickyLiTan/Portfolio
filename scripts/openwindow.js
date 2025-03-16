@@ -15,5 +15,5 @@ function linkedin() {
 }
 
 function resume() {
-    window.open("/misc/resume.pdf")
+    window.open("misc/resume.pdf")
 }
