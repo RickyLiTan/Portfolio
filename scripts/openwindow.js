@@ -13,3 +13,7 @@ function pos() {
 function linkedin() {
     window.open("https://www.linkedin.com/in/ricky-liqiang-tan");
 }
+
+function resume() {
+    window.open("/misc/resume.pdf")
+}
