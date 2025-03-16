@@ -15,5 +15,5 @@ function linkedin() {
 }
 
 function resume() {
-    window.open("/misc/resume.pdf")
+    window.open("https://drive.google.com/file/d/1_5QaJw9QGq3ycRo63IoM7_-tNNDxMDoj/view?usp=sharing")
 }
