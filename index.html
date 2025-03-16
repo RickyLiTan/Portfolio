@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="icon" type="image/x-icon" href="../../img/Logo.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ricky Tan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+        <header>
+                <nav>
+                    <ul class = "navbar flex">
+                        <li class = "increase name"><p>Ricky Tan</p></li>
+                        <li class = "increase"><a  href="#ABOUT">About Me</a></li>
+                        <li class = "increase"><a href="#PROJECTS">Projects</a></li>
+                        <li class = "increase"><a href="">Resume</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <div class = "about" id = ABOUT>
+                <div class = "flex pro">
+                    <div class = "flex-title">
+                        <h1>About Me</h1>
+                    </div>
+                    <h2>
+                        I am a Software Development studen at SAIT. My studies focus on programming, web development, databases, and
+                        application design. I have experiences in both back-end and front-end development. I have worked on a range of projects
+                        that involves database management, deployment, and user interface. I work effectively in Python and javascript for
+                        back-end Development and React, HTML, and CSS for Front-end Development.
+                    </h2>
+                </div>
+            </div>
+            <div class = "projects" id = PROJECTS> 
+                <div class = "flex pro">
+                    <div class = "flex-title">
+                        <h1>Projects</h1>
+                    </div>
+    
+                    <div class = "flex-project-title">
+                        <h2>Restaurant Point of Sale System</h2>
+                    </div>
+                    <div class = "flex-tags">
+                        <p>Python</p>
+                        <p>SQLite</p>
+                        <p>Kivy Framework</p>
+                        <p>Backend Development</p>
+                        <p>Database</p>
+                        <a onclick = "pos()">Github Link</a>
+                    </div>
+                    <div class = "preview-hover">
+                        <p>Hover over image to preview*</p>
+                    </div>
+                    <div class = "flex-project">
+                        <div class = "pro-text">
+                            <p>
+                                A Restaurant Point of Sale system using Python as its back end logic and a Kivy framework for its user interface to 
+                                streamline workflow and enhance efficiency. Incoperates a SQL database to manage handling orders, inventory and 
+                                transactions.
+                            </p>
+                        </div>
+                        <video class = "vid-hover" paused loop muted playsinline area-hidden="True">
+                            <source src = "../video/POS.mov" type = "video/mp4">
+                        </video>
+                    </div>
+                    <div class = "flex-project-title">
+                        <h2>New City Church Website</h2>
+                    </div>
+                    <div class = "flex-tags">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>Web Development</p>
+                        <a onclick="website()">Github Link</a>
+                    </div>
+                    <div class = "preview-hover">
+                        <p>Hover over image to preview*</p>
+                    </div>
+                    <div class = "flex-project">
+                        <div class = "pro-text">
+                            <p>A fully responsive website deployed using HTML, CSS and Javascript. Managed deployment with the inclusion of 
+                                domain configurgation and hosting. Collaborated with a web designer to refine UI/UX to ensure a visually appealing 
+                                and responsive design.
+                            </p>
+                            <p class = "to-end">Hover over to preview</p>
+                        </div>
+                        <video class = "vid-hover" paused loop muted playsinline area-hidden="True">
+                            <source src = "../video/website.mov" type = "video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </main>    
+        <footer>
+            <div class = "Contact" id="CONTACT">
+                <h1>Interested?</h1>
+                <h2>Connect with me!</h2>
+                <div class = "flex-contact">
+                    <a onclick="linkedin()">LinkedIn</a>
+                    <a onclick="github()">Github</a>
+                    <a href="mailto:rickyliqiangtan@gmail.com">Email</a>
+                </div>
+            </div>
+            <p class = "built">Website built by Ricky Liqiang Tan</p>
+        </footer>
+    </body>
+    <script src="../scripts/videoload.js"></script>
+    <script src="../scripts/openwindow.js"></script>
+</html>
