@@ -4,20 +4,20 @@ body {
 
 header {
     max-width: 100vw;
-    margin-top: 20px;
+    margin-top: 1.042vw;
 }
 
 footer {
     background-color: #589cb3;
     color: white;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 2.083vw;
+    padding-bottom: 1.042vw;
 }
 
 .built {
     text-align: center;
-    font-size: 12px;
-    margin-top: 60px;
+    font-size: 0.625vw;
+    margin-top: 3.125vw;
 }
 
 .colors {
@@ -35,14 +35,22 @@ footer {
     text-align: center;
 }
 
-.about h2 {
-    font-size: 20px;
+.Contact h1 {
+    font-size: 1.875vw;
+}
+
+.Contact a {
+    font-size: 0.729vw;
 }
 
 .about h2 {
-    font-size: 24px;
-    padding-left: 48px;
-    padding-right: 48px;
+    font-size: 1.042vw;
+}
+
+.about h2 {
+    font-size: 1.25vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 }
 
 .flex-contact {
@@ -50,7 +58,7 @@ footer {
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 2.083vw;
     justify-content: center;
 }
 
@@ -59,9 +67,9 @@ footer {
 } 
 
 .Contact h2 {
-    margin-top: -10px;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-top: -0.521vw;
+    margin-bottom: 1.042vw;
+    font-size: 0.729vw;
     font-weight: 700;
 }
 
@@ -81,22 +89,22 @@ nav, .flex {
 .flex {
     display: flex;
     justify-content: flex-end;
-    gap: 50px;
-    max-width: 1150px;
+    gap: 2.604vw;
+    max-width: 59.896vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 1.563vw;
 }
 
 
 .flex a {
     text-decoration: none;
-    font-size: 32px;
+    font-size: 1.667vw;
     color: #589cb3;
 }
 
 .flex .name p {
-    font-size: 32px;
+    font-size: 1.667vw;
 }
 
 .flex .name {
@@ -115,20 +123,20 @@ nav, .flex {
 
 .preview-hover p {
     float: right;
-    padding-right: 18px;
-    margin-bottom: -25px;
-    font-size: 12px;
+    padding-right: 0.938vw;
+    margin-bottom: -1.302vw;
+    font-size: 0.625vw;
 }
 
 .flex-project-title {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 1.042vw;
 }
 
 .flex-project-title a {
-    margin-right: 10px;
-    font-size: 16px;
+    margin-right: 0.521vw;
+    font-size: 0.833vw;
     color: black;
 }
 
@@ -139,7 +147,7 @@ nav, .flex {
 
 .flex-title h1 {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 3.125vw;
 }
 
 .flex-pro h2 {
@@ -147,47 +155,47 @@ nav, .flex {
 }
 
 .flex-title p {
-    font-size: 16px;
+    font-size: 0.833vw;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 0.521vw;
     color: #589cb3;
 }
 
 .projects {
-    margin-top: 80px;
+    margin-top: 4.167vw;
 }
 
 .pro h1 {
-    font-size: 64px;
+    font-size: 4.167vw;
     font-weight: 700;
     color: #589cb3;
 }
 
 .projects h2 {
-    margin-top: 10px;
-    font-size: 48px;
-    margin-bottom: 20px;
+    margin-top: 0.521vw;
+    font-size: 2.5vw;
+    margin-bottom: 1.042vw;
 }
 
 .pro {
     justify-content: flex-start;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.042vw;
 }
 
 .flex-tags {
     display: flex;
-    gap: 20px;
+    gap: 1.042vw;
 }
 
 .flex-tags a {
     margin-left: auto;
-    font-size: 14px;
+    font-size: 0.729vw;
     align-self: center;
-    padding: 8px 18px;
+    padding: 0.417vw 0.938vw;
     background-color: #6e5494;
     color: white;
-    border-radius: 25px;
+    border-radius: 1.302vw;
 }
 
 .flex-tags a:hover {
@@ -197,22 +205,22 @@ nav, .flex {
 }
 
 .flex-tags p{
-    font-size: 14px;
-    border: solid #589cb3 2.5px;
-    border-radius: 25px;
-    padding: 8px 18px;
+    font-size: 0.729vw;
+    border: solid #589cb3 0.13vw;
+    border-radius: 1.302vw;
+    padding: 0.417vw 0.938vw;
     color: #589cb3;
 }
 
 .flex-project {
     display: flex;
     align-items: center;
-    border: solid #589cb3 2px;
-    border-radius: 20px;
-    margin-top: 10px;
-    min-height: 400px;
+    border: solid #589cb3 0.104vw;
+    border-radius: 1.042vw;
+    margin-top: 0.521vw;
+    min-height: 20.833vw;
     height: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 4.167vw;
 }
 
 .pro hr {
@@ -221,7 +229,7 @@ nav, .flex {
     display:block;
     width: 100%;               
     background-color:#589cb3;
-    height: 6px;
+    height: 0.313vw;
     margin-top: 0;
 }
 
@@ -230,8 +238,8 @@ nav, .flex {
     flex: 1;
     align-self: flex-start;
     margin-right: auto;
-    font-size: 18px;
-    padding: 64px 64px 0px 64px;
+    font-size: 0.938vw;
+    padding: 3.333vw 3.333vw 0px 3.333vw
 }
 
 .pro-text {
@@ -241,11 +249,11 @@ nav, .flex {
 
 
 .flex-project video{
-    width: 573px;
-    height: 400px;
+    width: 29.844vw;
+    height: 20.833vw;
     border: solid black;
-    border-radius: 0px 18.5px 18.5px 0px;
-    border-width: 0px 0px 0px 1.8px;
+    border-radius: 0px 0.964vw 0.964vw 0px;
+    border-width: 0px 0px 0px 0.094vw;
     margin-left: auto;
     object-fit: cover;
     background-color: black;
