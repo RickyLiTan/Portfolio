@@ -20,10 +20,6 @@ footer {
     margin-top: 3.125vw;
 }
 
-.colors {
-    text-align: center;
-}
-
 .blue {
     background-color: #589cb3;
 }
@@ -37,14 +33,18 @@ footer {
 
 .Contact h1 {
     font-size: 1.875vw;
+    font-weight: 700;
 }
 
 .Contact a {
     font-size: 0.729vw;
 }
 
-.about h2 {
-    font-size: 1.042vw;
+.Contact h2 {
+    margin-top: -0.521vw;
+    margin-bottom: 1.042vw;
+    font-size: 0.729vw;
+    font-weight: 700;
 }
 
 .about h2 {
@@ -62,16 +62,7 @@ footer {
     justify-content: center;
 }
 
-.Contact h1 {
-    font-weight: 700;
-} 
 
-.Contact h2 {
-    margin-top: -0.521vw;
-    margin-bottom: 1.042vw;
-    font-size: 0.729vw;
-    font-weight: 700;
-}
 
 .flex-contact a {
     text-decoration: none;
@@ -188,7 +179,7 @@ nav, .flex {
     gap: 1.042vw;
 }
 
-.flex-tags a {
+.flex-tags a, .github-link a {
     margin-left: auto;
     font-size: 0.729vw;
     align-self: center;
@@ -198,10 +189,14 @@ nav, .flex {
     border-radius: 1.302vw;
 }
 
-.flex-tags a:hover {
+.flex-tags a:hover, .github-link a:hover {
     background-color: #5a26a8;
     color: white;
     text-decoration: none;
+}
+
+.github-link {
+    display: none;
 }
 
 .flex-tags p{
@@ -265,5 +260,178 @@ nav, .flex {
     flex: 2;
     transition: all 0.2s cubic-bezier(0.08, 0.82, 0.17, 1);
     filter: brightness(100%);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-top: 20px;
+    }
+    
+    .flex .name {
+        margin: 0;
+        display: none;
+    }
+    
+    .flex .increase a {
+        font-size: 20px;
+    }
+
+    .navbar {
+        max-width: calc(100vw - 48px);
+        width: 100%;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+
+    .pro {
+        gap: 0px;
+        max-width: calc(100vw - 48px);
+    }
+
+    .pro h1 {
+        font-size: 28px;
+        line-height: 36.8px;
+    }
+
+    .about h2, .projects h2 {
+        font-size: 18px;
+        padding: 0;
+        max-width: calc(100vw - 48px);
+        width: 100%;
+    }
+
+    .flex-title h1 {
+        margin-bottom: 0px;
+    }
+
+    .flex-project-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .projects{
+        margin-top: 40px;
+    }
+
+    .projects h2 {
+        margin: 0px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-tags {
+        max-width: 768px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 4px;
+    }
+
+    .preview-hover {
+        display: none;
+    }
+
+    .flex-tags a {
+        display: none;
+    }
+
+    .github-link {
+        display: block;
+        margin-top: 10px;
+        max-width: 768px;
+        margin-left: auto;
+    }
+
+    .github-link a {
+        float: left;
+    }
+    
+
+    .flex-tags p, .github-link a {
+        font-size: 12px;
+        padding: 4px 8px;
+        border: solid #589cb3 1px;
+        border-radius: 24px;
+    }
+
+    .flex-tags a {
+        border: none;
+    }
+
+    .flex-project {
+        margin: 0px;
+        max-width: 768px;
+        width: 100%;
+        max-height: 1150px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column-reverse;
+        border-radius: 12px;
+        border: solid #589cb3 1px;
+        min-height: auto;
+    }
+
+    .flex-project .pro-text {
+        margin: 0;
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    .flex-project video {
+        max-width: 768px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+        border-width: 0;
+        filter: brightness(100%);
+    }
+
+    .vid-hover {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+        pointer-events: none
+    }
+
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .Contact h1 {
+        font-size: 36px;
+    }
+
+    .Contact h2 {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .Contact a {
+        font-size: 16px;
+    }
+
+    .built {
+        margin-top: 40px;
+        font-size: 8px;
+    }
+    
+    .flex-contact {
+        flex-direction: column;
+        gap: 12px;
+    }
+
 }
 
