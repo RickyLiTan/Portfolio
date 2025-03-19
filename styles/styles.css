@@ -329,8 +329,6 @@ nav, .flex {
         flex-wrap: wrap;
         margin-top: 10px;
         margin-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto;
         gap: 4px;
     }
 
