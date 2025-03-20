@@ -349,6 +349,7 @@ nav, .flex {
 
     .github-link a {
         float: left;
+        border: none;
     }
     
 
