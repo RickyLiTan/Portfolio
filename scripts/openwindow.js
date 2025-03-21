@@ -15,5 +15,5 @@ function linkedin() {
 }
 
 function resume() {
-    window.open("https://drive.google.com/file/d/1_5QaJw9QGq3ycRo63IoM7_-tNNDxMDoj/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1QEEknXOkpviydpDM2QcrDlnBe2pw-vqy/view?usp=sharing")
 }
