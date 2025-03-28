@@ -1,435 +1,207 @@
+
+
+@font-face {
+    font-family: coolvetica;
+    src: url(../fonts/Coolvetica\ Rg.otf)
+}
+
+@font-face {
+    font-family: HelveticaNeueHeavy;
+    src: url(../fonts/HelveticaNeue/HelveticaNeueMedium.otf)
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeue/HelveticaNeueRoman.otf)
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-header {
-    max-width: 100vw;
-    margin-top: 1.042vw;
-}
-
-footer {
-    background-color: #589cb3;
-    color: white;
-    padding-top: 2.083vw;
-    padding-bottom: 1.042vw;
-}
-
-.built {
-    text-align: center;
-    font-size: 0.625vw;
-    margin-top: 3.125vw;
-}
-
-.blue {
-    background-color: #589cb3;
-}
-
-.Contact {
-    max-width: 100vw;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.Contact h1 {
-    font-size: 1.875vw;
-    font-weight: 700;
-}
-
-.Contact a {
-    font-size: 0.729vw;
-}
-
-.Contact h2 {
-    margin-top: -0.521vw;
-    margin-bottom: 1.042vw;
-    font-size: 0.729vw;
-    font-weight: 700;
-}
-
-.about h2 {
-    font-size: 1.25vw;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-}
-
-.flex-contact {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 2.083vw;
-    justify-content: center;
-}
-
-
-
-.flex-contact a {
-    text-decoration: none;
-}
-
-.flex-contact a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-nav, .flex {
-    max-width: 100vw;
+    font-family: HelveticaNeue;
 }
 
 .flex {
     display: flex;
-    justify-content: flex-end;
-    gap: 2.604vw;
-    max-width: 59.896vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.563vw;
 }
 
-
-.flex a {
-    text-decoration: none;
-    font-size: 1.667vw;
-    color: #589cb3;
+button {
+    width: 187px;
+    padding-top: 16px;
+    padding-right: 43px;
+    padding-bottom: 16px;
+    padding-left: 43px;
+    border-radius: 200px;
+    background-color: rgba(7, 12, 37, 1);
+    color: white;
 }
 
-.flex .name p {
-    font-size: 1.667vw;
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
 }
 
-.flex .name {
-    margin-right: auto;
-}
-
-.pro a {
-    color: black;
-}
-
-.flex a:hover, .flex-contact a:hover {
-    text-decoration: underline;
-    opacity: 70%;
-    cursor: pointer;
-}
-
-.preview-hover p {
-    float: right;
-    padding-right: 0.938vw;
-    margin-bottom: -1.302vw;
-    font-size: 0.625vw;
-}
-
-.flex-project-title {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.042vw;
-}
-
-.flex-project-title a {
-    margin-right: 0.521vw;
-    font-size: 0.833vw;
-    color: black;
-}
-
-.flex-project-title a:hover {
-    color:rgb(125, 125, 125);
-}
-
-
-.flex-title h1 {
-    margin: 0;
-    margin-bottom: 3.125vw;
-}
-
-.flex-pro h2 {
-    margin: 0;
-}
-
-.flex-title p {
-    font-size: 0.833vw;
-    margin-left: auto;
-    margin-right: 0.521vw;
-    color: #589cb3;
-}
-
-.projects {
-    margin-top: 4.167vw;
-}
-
-.pro h1 {
-    font-size: 4.167vw;
+h3 {
     font-weight: 700;
-    color: #589cb3;
+    font-size: 32px;
+    line-height: 100%;
 }
 
-.projects h2 {
-    margin-top: 0.521vw;
-    font-size: 2.5vw;
-    margin-bottom: 1.042vw;
+h2 {
+    font-family: HelveticaNeueHeavy;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
 }
 
-.pro {
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 1.042vw;
+h1 {
+    font-family: coolvetica;
+    margin: 0;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 100%;
+    letter-spacing: 10px;
 }
 
-.flex-tags {
+.NavBar {
+    display: none
+}
+
+.content-size {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 181px;
+}
+
+
+.about {
+    background-color: rgba(250, 251, 253, 1);
+    margin: auto;
+    padding-top: 186px;
+    padding-bottom: 415px;
+
+    position: relative;
+}
+
+.about img {
+    margin-left: 54px;
+}
+
+.about .big-line {
+    position: relative;
+    margin-left: 150px;
+    margin-top: -40px;
+    z-index: -1;
+    width: 598px;
+    height: 44px;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgba(190, 200, 255, 1);
+    margin-bottom: 39px;
+}
+
+
+
+
+.about button {
+    margin-top: 32px;
+}
+
+.skills {
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background-color: white;
+}
+
+.skills img {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    border-width: 1px;
+}
+
+.skills p {
+    margin-top: 16px;
+    margin-bottom: 58px;
+}
+
+.skills .flex {
+    gap: 47px;
+}
+
+.recent-projects {
+    background-color: rgba(7, 12, 37, 1);
+}
+
+.recent-projects {
+    color: white;
+}
+
+.margin-bottom {
+    margin-bottom: 160px;
+}
+
+.recent-projects img {
+    width: 606px;
+    height: 402px;
+}
+
+.recent-projects .flex {
+    gap: 40px;
+}
+
+.description {
     display: flex;
-    gap: 1.042vw;
+    flex-direction: column;
+    width: 504px;
 }
 
-.flex-tags a, .github-link a {
-    margin-left: auto;
-    font-size: 0.729vw;
-    align-self: center;
-    padding: 0.417vw 0.938vw;
-    background-color: #6e5494;
-    color: white;
-    border-radius: 1.302vw;
+.main-project {
+    margin-bottom: 100px;
 }
 
-.flex-tags a:hover, .github-link a:hover {
-    background-color: #5a26a8;
-    color: white;
-    text-decoration: none;
+.main-project h3 {
+    margin-bottom: 24px;
 }
 
-.github-link {
-    display: none;
+.main-project p {
+    font-size: 18px;
 }
 
-.flex-tags p{
-    font-size: 0.729vw;
-    border: solid #589cb3 0.13vw;
-    border-radius: 1.302vw;
-    padding: 0.417vw 0.938vw;
-    color: #589cb3;
+.tags {
+    margin-top: auto;
 }
 
-.flex-project {
+.main-project button {
+    margin-top: 32px;
+    background-color: rgba(190, 200, 255, 1);
+    color: rgba(7, 12, 37, 1);
+    font-size: 18px;
+    width: 143px;
+    height: 37px;
+    line-height: 37px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+footer p {
+    margin-top: 10px;
+    margin-bottom: 58px;
+}
+
+footer img {
+    margin: auto;
+    margin-left: 40px;
+    width: 56px;
+}
+
+
+footer h2 {
     display: flex;
     align-items: center;
-    border: solid #589cb3 0.104vw;
-    border-radius: 1.042vw;
-    margin-top: 0.521vw;
-    min-height: 20.833vw;
-    height: 100%;
-    margin-bottom: 4.167vw;
 }
-
-.pro hr {
-    border: 0;
-    clear: both;
-    display:block;
-    width: 100%;               
-    background-color:#589cb3;
-    height: 0.313vw;
-    margin-top: 0;
-}
-
-
-.flex-project .pro-text{
-    flex: 1;
-    align-self: flex-start;
-    margin-right: auto;
-    font-size: 0.938vw;
-    padding: 3.333vw 3.333vw 0px 3.333vw
-}
-
-.pro-text {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.flex-project video{
-    width: 29.844vw;
-    height: 20.833vw;
-    border: solid black;
-    border-radius: 0px 0.964vw 0.964vw 0px;
-    border-width: 0px 0px 0px 0.094vw;
-    margin-left: auto;
-    object-fit: cover;
-    background-color: black;
-    filter: brightness(60%);
-
-}
-
-.vid-hover:hover {
-    flex: 2;
-    transition: all 0.2s cubic-bezier(0.08, 0.82, 0.17, 1);
-    filter: brightness(100%);
-}
-
-.hidden {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    header {
-        margin-top: 20px;
-    }
-    
-    .flex .name {
-        margin: 0;
-        display: none;
-    }
-    
-    .flex .increase a {
-        font-size: 20px;
-    }
-
-    .navbar {
-        max-width: calc(100vw - 48px);
-        width: 100%;
-        margin-bottom: 40px;
-        justify-content: space-between;
-    }
-
-    .pro {
-        gap: 0px;
-        max-width: calc(100vw - 48px);
-    }
-
-    .pro h1 {
-        font-size: 28px;
-        line-height: 36.8px;
-    }
-
-    .about h2, .projects h2 {
-        font-size: 18px;
-        padding: 0;
-        max-width: calc(100vw - 48px);
-        width: 100%;
-    }
-
-    .flex-title h1 {
-        margin-bottom: 0px;
-    }
-
-    .flex-project-title {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .projects{
-        margin-top: 40px;
-    }
-
-    .projects h2 {
-        margin: 0px;
-        max-width: 768px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .flex-tags {
-        max-width: 768px;
-        flex-wrap: wrap;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        gap: 4px;
-    }
-
-    .preview-hover {
-        display: none;
-    }
-
-    .flex-tags a {
-        display: none;
-    }
-
-    .github-link {
-        display: block;
-        margin-top: 10px;
-        max-width: 768px;
-        margin-left: auto;
-    }
-
-    .flex-tags p, .github-link a {
-        font-size: 12px;
-        padding: 4px 8px;
-        border: solid #589cb3 1px;
-        border-radius: 24px;
-    }
-
-    .github-link a {
-        float: left;
-        border: none;
-    }
-
-    .flex-tags a {
-        border: none;
-    }
-
-    .flex-project {
-        margin: 0px;
-        max-width: 768px;
-        width: 100%;
-        max-height: 1150px;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: column-reverse;
-        border-radius: 12px;
-        border: solid #589cb3 1px;
-        min-height: auto;
-    }
-
-    .flex-project .pro-text {
-        margin: 0;
-        padding: 14px;
-        font-size: 18px;
-    }
-
-    .flex-project video {
-        max-width: 768px;
-        width: 100%;
-        height: auto;
-        border-radius: 12px 12px 0 0;
-        border-width: 0;
-        filter: brightness(100%);
-    }
-
-    .vid-hover {
-        display: none;
-    }
-
-    .hidden {
-        display: block;
-        pointer-events: none
-    }
-
-    footer {
-        margin-top: 40px;
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-
-    .Contact h1 {
-        font-size: 36px;
-    }
-
-    .Contact h2 {
-        margin-top: -10px;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-
-    .Contact a {
-        font-size: 16px;
-    }
-
-    .built {
-        margin-top: 40px;
-        font-size: 8px;
-    }
-    
-    .flex-contact {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-}
-

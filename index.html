@@ -10,116 +10,71 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
 
     <body>
         <header>
-                <nav>
-                    <ul class = "navbar flex">
-                        <li class = "increase name"><p>Ricky Tan</p></li>
-                        <li class = "increase"><a  href="#ABOUT">About Me</a></li>
-                        <li class = "increase"><a href="#PROJECTS">Projects</a></li>
-                        <li class = "increase" onclick="resume()"><a>Resume</a></li>
-                    </ul>
-                </nav>
         </header>
         <main>
-            <div class = "about" id = ABOUT>
-                <div class = "flex pro">
-                    <div class = "flex-title">
-                        <h1>About Me</h1>
-                    </div>
-                    <h2>
-                        Hey there! I am Ricky Tan. I am a Software Development studen at SAIT. My studies focus on programming, web development, databases, and
-                        application design. I have experiences in both back-end and front-end development. I have worked on a range of projects
-                        that involves database management, deployment, and user interface. I work effectively in Python and javascript for
-                        back-end Development and React, HTML, and CSS for Front-end Development.
-                    </h2>
+            <div class="not-white">
+                <div class="NavBar flex">
+                    <p>Resume</p>
+                    <p>Contact</p>
+                    <p>Github</p>
+                    <p>LinkedIn</p>
                 </div>
             </div>
-            <div class = "projects" id = PROJECTS> 
-                <div class = "flex pro">
-                    <div class = "flex-title">
-                        <h1>Projects</h1>
+            <div class = "about content-size" id = ABOUT>
+                <h1>HI, I'M RICKY<img src = "./image/Waving-hand.svg"></h1>
+                <hr class = "big-line">
+                <p>Hi, I’m Ricky, a software development student at SAIT passionate about<br>building efficient, user-friendly applications. In my free time I enjoy </p>
+                <p>Explore my work to see how I turn ideas into functional code.</p>
+
+                <button>See Projects</button>
+            </div>
+            <div class="skills content-size">
+                <h2>My current tool-belt</h2>
+                <p>I'm expanding it as we speak.</p>
+                <div class="flex">
+                    <img src="">
+                    <img >
+                    <img>
+                    <img src="12">
+                </div>
+            </div>
+            <div class="recent-projects content-size">
+                <div class="title">
+                    <h1>RECENT PROJECTS</h1>
+                    <hr class="big-line">
+                </div>
+                <p class = "margin-bottom">From concept to code, here are some of the projects I’ve taken part in.  Check them out to see my problem-solving skills.</p>
+
+                <div class="flex main-project">
+                    <img>
+                    <div class = "description">
+                        <h3>Fully responsive website for<br>New City Church.</h3>
+                        <p>Working with a Web Designer, I developed the front-end for New City Church’s fully responsive website, creating a modern and user-friendly experience. The site is optimized for accessibility, performance, and easy content management.</p>
+                        <p class = "tags">Tags</p>
+                        <button>Github</button>
                     </div>
-    
-                    <div class = "flex-project-title">
-                        <h2>Restaurant Point of Sale System</h2>
-                    </div>
-                    <div class = "flex-tags">
-                        <p>Python</p>
-                        <p>SQLite</p>
-                        <p>Kivy Framework</p>
-                        <p>Backend Development</p>
-                        <p>Database</p>
-                        <a onclick = "pos()">Github Link</a>
-                    </div>
-                    <div class = "preview-hover">
-                        <p>Hover over image to preview*</p>
-                    </div>
-                    <div class = "flex-project">
-                        <div class = "pro-text">
-                            <p>
-                                A Restaurant Point of Sale system using Python as its back end logic and a Kivy framework for its user interface to 
-                                streamline workflow and enhance efficiency. Incoperates a SQL database to manage handling orders, inventory and 
-                                transactions.
-                            </p>
-                        </div>
-                        <video class = "vid-hover active" paused loop muted playsinline area-hidden="True">
-                            <source src = "video/POS.mov" type = "video/mp4">
-                        </video>
-                        <video class = "vid-hover hidden" loop muted playsinline area-hidden="True">
-                            <source src = "video/POS.mov" type = "video/mp4">
-                        </video>
-                    </div>
-                    <div class = "github-link">
-                        <a onclick = "pos()">Github Link</a>
-                    </div>
-                    <div class = "flex-project-title">
-                        <h2>New City Church Website</h2>
-                    </div>
-                    <div class = "flex-tags">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                        <p>Web Development</p>
-                        <a onclick="website()">Github Link</a>
-                    </div>
-                    <div class = "preview-hover">
-                        <p>Hover over image to preview*</p>
-                    </div>
-                    <div class = "flex-project">
-                        <div class = "pro-text">
-                            <p>A fully responsive website deployed using HTML, CSS and Javascript. Managed deployment with the inclusion of 
-                                domain configurgation and hosting. Collaborated with a web designer to refine UI/UX to ensure a visually appealing 
-                                and responsive design.
-                            </p>
-                        </div>
-                        <video class = "vid-hover active" paused loop muted playsinline area-hidden="True">
-                            <source src = "video/website.mov" type = "video/mp4">
-                        </video>
-                        <video class = "vid-hover hidden" loop muted playsinline area-hidden="True">
-                            <source src = "video/website.mov" type = "video/mp4">
-                        </video>
-                    </div>
-                    <div class = "github-link">
-                        <a onclick = "website()">Github Link</a>
+                </div>
+                <div class="flex main-project">
+                    <img>
+                    <div class = "description">
+                        <h3>Custom restaurant POS system for Yoshi Grill.</h3>
+                        <p>I designed and developed the front-end for a custom restaurant POS system, ensuring a seamless and intuitive experience for staff. The system is fully responsive, optimized for speed, and tailored to Yoshi Grill’s workflow for efficient order management.</p>
+                        <p class = "tags">Tags</p>
+                        <button>Github</button>
                     </div>
                 </div>
             </div>
         </main>    
         <footer>
-            <div class = "Contact" id="CONTACT">
-                <h1>Interested?</h1>
-                <h2>Connect with me!</h2>
-                <div class = "flex-contact">
-                    <a onclick="linkedin()">LinkedIn</a>
-                    <a onclick="github()">Github</a>
-                    <a href="mailto:rickyliqiangtan@gmail.com">Email</a>
-                </div>
+            <div class = "Contact content-size" id="CONTACT">
+                <h2>Interested in talking more?<img src = "./image/Rocket.svg"></h2>
+                <p>Whether you have a project in mind, a question, or just want to connect, feel free to reach out. I’d love to chat</p>
+                <button>Contact me</button>
             </div>
-            <p class = "built">Website built by Ricky Liqiang Tan</p>
         </footer>
     </body>
     <script src="scripts/videoload.js"></script>
