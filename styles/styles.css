@@ -15,6 +15,10 @@
     src: url(../fonts/HelveticaNeue/HelveticaNeueRoman.otf)
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     font-family: HelveticaNeue;
 }
@@ -23,7 +27,7 @@ body {
     display: flex;
 }
 
-button {
+button, .about a {
     width: 187px;
     padding-top: 16px;
     padding-right: 43px;
@@ -123,8 +127,8 @@ h1 {
     background-color: #40C9A2;
 }
 
-.about button {
-    margin-top: 32px;
+.about p {
+    margin-bottom: 32px;
 }
 
 .skills {
@@ -158,11 +162,19 @@ h1 {
     margin-bottom: 160px;
 }
 
-.recent-projects img {
+.recent-projects video {
     width: 606px;
     height: 402px;
+    object-fit: cover;
+    filter: brightness(50%);
+    background-color: black;
 }
 
+.recent-projects video:hover {
+    filter: brightness(100%);
+    object-fit: contain;
+}
+ 
 .recent-projects .flex {
     gap: 40px;
 }

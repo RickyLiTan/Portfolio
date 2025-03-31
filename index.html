@@ -28,7 +28,7 @@
                     <p>Hi, I’m Ricky, a software development student at SAIT passionate about<br>building efficient, user-friendly applications. In my free time I enjoy </p>
                     <p>Explore my work to see how I turn ideas into functional code.</p>
 
-                    <button>See Projects</button>
+                    <a href="#PROJECTS">See Projects</a>
                 </div>
             </div>
             <div class="skills content-size">
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="dark-blue">
-                <div class="recent-projects content-size">
+                <div class="recent-projects content-size" id="PROJECTS">
                     <div class="title">
                         <h1>RECENT PROJECTS</h1>
                         <hr class="big-line">
@@ -50,21 +50,31 @@
                     <p class = "margin-bottom">From concept to code, here are some of the projects I’ve taken part in.  Check them out to see my problem-solving skills.</p>
 
                     <div class="flex main-project">
-                        <img>
+                        <video class = "vid-hover active" paused loop muted playsinline area-hidden="True">
+                            <source src = "video/website.mov" type = "video/mp4">
+                        </video>
+                        <video class = "vid-hover hidden" loop muted playsinline area-hidden="True">
+                            <source src = "video/website.mov" type = "video/mp4">
+                        </video>
                         <div class = "description">
                             <h3>Fully responsive website for<br>New City Church.</h3>
                             <p>Working with a Web Designer, I developed the front-end for New City Church’s fully responsive website, creating a modern and user-friendly experience. The site is optimized for accessibility, performance, and easy content management.</p>
                             <p class = "tags">Tags</p>
-                            <button>Github</button>
+                            <button onclick="website()">Github</button>
                         </div>
                     </div>
                     <div class="flex main-project">
-                        <img>
+                        <video class = "vid-hover active" id="POS" paused loop muted playsinline area-hidden="True" poster="./image/PlaceholderPOS.jpeg">
+                            <source src = "video/POS.mov" type = "video/mp4">
+                        </video>
+                        <video class = "vid-hover hidden" loop muted playsinline area-hidden="True">
+                            <source src = "video/POS.mov" type = "video/mp4">
+                        </video>
                         <div class = "description">
                             <h3>Custom restaurant POS system for Yoshi Grill.</h3>
                             <p>I designed and developed the front-end for a custom restaurant POS system, ensuring a seamless and intuitive experience for staff. The system is fully responsive, optimized for speed, and tailored to Yoshi Grill’s workflow for efficient order management.</p>
                             <p class = "tags">Tags</p>
-                            <button>Github</button>
+                            <button onclick="pos()">Github</button>
                         </div>
                     </div>
                 </div>
