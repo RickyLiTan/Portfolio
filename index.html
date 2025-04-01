@@ -14,21 +14,22 @@
         <header>
         </header>
         <main>
-                <div class="NavBar flex">
-                    <p>Resume</p>
-                    <p>Contact</p>
-                    <p>Github</p>
-                    <p>LinkedIn</p>
+                <div class="NavBar flex" id = "NAV">
+                    <a onclick="resume()">Resume</a>
+                    <a href = "#CONTACT">Contact</a>
+                    <p onclick="position()">Github</p>
+                    <p onclick="linkedin()">LinkedIn</p>
                 </div>
             
             <div class="not-white">
                 <div class = "about content-size" id = ABOUT>
-                    <h1>HI, I'M RICKY<img src = "./image/Waving-hand.svg"></h1>
+                    <h1>HI, I'M RICKY<img src = "image/Waving-hand.svg"></h1>
                     <hr class = "big-line">
                     <p>Hi, I’m Ricky, a software development student at SAIT passionate about<br>building efficient, user-friendly applications. In my free time I enjoy </p>
                     <p>Explore my work to see how I turn ideas into functional code.</p>
-
-                    <a href="#PROJECTS">See Projects</a>
+                    <div class="HUH">
+                        <a href="#PROJECTS">See Projects</a>
+                    </div>
                 </div>
             </div>
             <div class="skills content-size">
@@ -57,14 +58,19 @@
                             <source src = "video/website.mov" type = "video/mp4">
                         </video>
                         <div class = "description">
-                            <h3>Fully responsive website for<br>New City Church.</h3>
+                          <h3>Fully responsive website for<br>New City Church.</h3>
                             <p>Working with a Web Designer, I developed the front-end for New City Church’s fully responsive website, creating a modern and user-friendly experience. The site is optimized for accessibility, performance, and easy content management.</p>
-                            <p class = "tags">Tags</p>
+                            <div class = "flex-tags tags">
+                                <p>HTML |</p>
+                                <p>CSS |</p>
+                                <p>JavaScript |</p>
+                                <p>Web Development</p>
+                            </div>
                             <button onclick="website()">Github</button>
                         </div>
                     </div>
                     <div class="flex main-project">
-                        <video class = "vid-hover active" id="POS" paused loop muted playsinline area-hidden="True" poster="./image/PlaceholderPOS.jpeg">
+                        <video class = "vid-hover active" id="POS" paused loop muted playsinline area-hidden="True">
                             <source src = "video/POS.mov" type = "video/mp4">
                         </video>
                         <video class = "vid-hover hidden" loop muted playsinline area-hidden="True">
@@ -73,7 +79,13 @@
                         <div class = "description">
                             <h3>Custom restaurant POS system for Yoshi Grill.</h3>
                             <p>I designed and developed the front-end for a custom restaurant POS system, ensuring a seamless and intuitive experience for staff. The system is fully responsive, optimized for speed, and tailored to Yoshi Grill’s workflow for efficient order management.</p>
-                            <p class = "tags">Tags</p>
+                            <div class = "flex-tags tags">
+                                <p>Python |</p>
+                                <p>SQLite |</p>
+                                <p>Kivy Framework |</p>
+                                <p>Backend Development |</p>
+                                <p>Database</p>
+                            </div>
                             <button onclick="pos()">Github</button>
                         </div>
                     </div>
@@ -82,12 +94,13 @@
         </main>    
         <footer>
             <div class = "Contact content-size" id="CONTACT">
-                <h2>Interested in talking more?<img src = "./image/Rocket.svg"></h2>
+                <h2>Interested in talking more?<img src = "image/Rocket.svg"></h2>
                 <p>Whether you have a project in mind, a question, or just want to connect, feel free to reach out. I’d love to chat</p>
-                <button>Contact me</button>
+                <a href="mailto:rickyliqiangtan@gmail.com">Contact me</a>
             </div>
         </footer>
     </body>
     <script src="scripts/videoload.js"></script>
     <script src="scripts/openwindow.js"></script>
+    <script src="scripts/scroll.js"></script>
 </html>
