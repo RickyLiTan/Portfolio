@@ -15,6 +15,14 @@
     src: url(../fonts/HelveticaNeue/HelveticaNeueRoman.otf)
 }
 
+/*Nav Bar to top
+Padding change
+Decrease Font size for Project Descritoption
+Line hieght for the headings of projects
+Fontsize for anchor buttons
+button hover effect (figma)
+remove underlines for buttons*/
+
 .hidden {
     display: none;
 }
@@ -89,6 +97,7 @@ h1 {
 }
 
 .NavBar {
+    z-index: 3;
     flex-direction: column;
     position: fixed;
     width: 108px;
@@ -210,15 +219,9 @@ h1 {
     width: 606px;
     height: 402px;
     object-fit: cover;
-    filter: brightness(50%);
     background-color: black;
 }
 
-.recent-projects video:hover {
-    filter: brightness(100%);
-    object-fit: contain;
-}
- 
 .recent-projects .flex {
     gap: 40px;
 }
