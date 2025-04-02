@@ -23,6 +23,10 @@ Fontsize for anchor buttons
 button hover effect (figma)
 remove underlines for buttons*/
 
+.skills {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
