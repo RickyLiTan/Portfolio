@@ -42,12 +42,17 @@ Fontsize for anchor buttons
 button hover effect (figma)
 remove underlines for buttons*/
 
+.invisible {
+    visibility: hidden;
+}
+
 .skills {
     display: none;
 }
 
 .open {
-    display: none;
+    overflow-x: hidden;
+    width: 0px;
 }
 
 .hidden {
@@ -384,19 +389,29 @@ footer h2 {
     
     
     .open {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 0;
+        display: flex;
+        transition: 0.5s;
         margin-top: 1.302vw;
         flex-direction: column;
-        gap: 1vw;
+        gap: 1.5vw;
+        background-color: rgba(250, 251, 253, 1);
     }
 
     .open * {
         color: rgba(7, 12, 37, 1);
         text-align: right;
-        
     }
 
-    #check:checked ~ .open {
-        display: flex;
+    .open a, .open p {
+        margin-right: 10px;
+    }
+
+    .open .no-margin {
+        margin: 0;
     }
 
 
@@ -408,7 +423,7 @@ footer h2 {
     }
     
     .mobile-nav * {
-        font-size: 3.76vw;
+        font-size: 7vw;
     }
 
     .about h1 {

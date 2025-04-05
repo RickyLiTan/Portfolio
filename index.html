@@ -24,14 +24,14 @@
 
 
             <div class="mobile-nav hidden" id = "NAV">
-                <input type = "checkbox" id ="check">
-                <label for="check" class = "checkbtn">
-                    <i class="fa fa-bars" ></i>
-                </label>
-                <div class = "open">
-                    <p id ="first" onclick="resume()">Resume</p>
-                    <a id="second" href = "#CONTACT">Contact</a>
-                    <p id="third" onclick="github()">Github</p>
+                <i onclick="openNav()" class="fa fa-bars" style="font-size:7vw"></i>
+                <div class="invisible">a</div>
+
+                <div class = "open" id = "MENU">
+                    <p class="no-margin" onclick="closeNav()">x</p>
+                    <p onclick="resume()">Resume</p>
+                    <a href = "#CONTACT">Contact</a>
+                    <p onclick="github()">Github</p>
                     <p onclick="linkedin()">LinkedIn</p>
                 </div>
             </div>
@@ -123,5 +123,5 @@
     </body>
     <script src="scripts/videoload.js"></script>
     <script src="scripts/openwindow.js"></script>
-    <script src="scripts/scroll.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </html>
