@@ -15,6 +15,8 @@
     src: url(../fonts/HelveticaNeue/HelveticaNeueRoman.otf)
 }
 
+/*H1 64px*/
+
 /*Nav Bar to top
 Padding change
 Decrease Font size for Project Descritoption
@@ -280,6 +282,7 @@ footer p {
 }
 
 footer img {
+<<<<<<< Updated upstream
     margin: auto;
     margin-left: 40px;
     width: 56px;
@@ -290,3 +293,152 @@ footer h2 {
     display: flex;
     align-items: center;
 }
+=======
+    width: 2.917vw;
+}
+
+
+@media (max-width: 425px) {
+    .content-size {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        max-width: 327px;
+    }
+
+    h1 {
+        font-size: 64px;
+        letter-spacing: 4px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 172px;
+    }
+
+    button, .about a, .Contact a {
+        width: 172px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-radius: 200px;
+    }
+
+    .NavBar {
+        padding: 20px;
+    }
+    
+    .NavBar * {
+        font-size: 16px;
+    }
+
+    .about {
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+
+    .about p {
+        margin-bottom: 18px;
+    }
+
+    .about br {
+        display: none;
+    }
+
+    .img-flex {
+        gap: 10px;
+    }
+
+    .img-flex img {
+        width: 64px;
+    }
+
+    .big-line {
+        margin: 0;
+        margin-top: -16px;
+        margin-left: -5px;
+        height: 18px;
+        width: 180px;
+        margin-bottom: 40px;
+    }
+
+    .recent-projects .big-line {
+        margin-right: auto;
+        width: 330px;
+        margin-left: -8px;
+    }
+
+    .margin-bottom {
+        margin-bottom: 24px;
+    }
+
+    .active {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .recent-projects video {
+        width: 327px;
+        height: 200px;
+    }
+
+    .recent-projects .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .description {
+        width: 327px;
+    }
+
+    .main-project {
+        margin-bottom: 48px;
+    }
+
+    .main-project h3 {
+        margin-bottom: 18px;
+    }
+
+    .main-project p{
+        font-size: 16px;
+        margin-bottom: 48px;
+    }
+
+    .main-project button {
+        width: 152px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 16px;
+        border-radius: 200px;
+        height: auto;
+        margin-top: 18px;
+    }
+
+    footer p {
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+
+    footer h2 {
+        width: 230px;
+    }
+
+    footer img {
+        width: 34px;
+    }
+    
+ }
+>>>>>>> Stashed changes
