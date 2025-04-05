@@ -366,16 +366,19 @@ footer h2 {
         color: #fff;
         position: absolute;
         right: 0;
+        top: 0;
+        left: 0;
     }
 
     #check {
         position: relative;
         z-index: 3;
-        margin-left: 300px;
-        opacity: 0;
+        visibility: hidden;
+        margin: 0;
     }
 
     .fa {
+        float: right;
         color: rgba(7, 12, 37, 1);
     }
     
