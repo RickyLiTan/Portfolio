@@ -45,21 +45,20 @@ body {
 }
 
 button, .about a, .Contact a {
-    width: 187px;
-    padding-top: 16px;
-    padding-right: 43px;
-    padding-bottom: 16px;
-    padding-left: 43px;
-    border-radius: 200px;
+    width: 9.74vw;
+    padding-top: 0.833vw;
+    padding-bottom: 0.833vw;
+    border-radius: 10.417vw;
     background-color: rgba(7, 12, 37, 1);
     color: white;
     border: 0;
+    font-size: 0.938vw;
 }
 
-.HUH {
-    margin-top: 32px;
+.btn {
+    margin-top: 1.667vw;
     display: flex;
-    width: 187px;
+    width: 9.74vw;
 }
 
 .about a {
@@ -74,20 +73,20 @@ button, .about a, .Contact a {
 
 p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.042vw;
     line-height: 120%;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 1.667vw;
     line-height: 100%;
 }
 
 h2 {
     font-family: HelveticaNeueHeavy;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 2.5vw;
     line-height: 100%;
 }
 
@@ -95,31 +94,29 @@ h1 {
     font-family: coolvetica;
     margin: 0;
     font-weight: 700;
-    font-size: 120px;
+    font-size: 6.25vw;
     line-height: 100%;
-    letter-spacing: 10px;
+    letter-spacing: 0.521vw;
 }
 
 .NavBar {
-    z-index: 3;
-    flex-direction: column;
-    position: fixed;
-    width: 108px;
-    height: 136px;
-    bottom: 80px;
-    right: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 40px;
-    justify-content: space-between;
-    color: white;
-    background-color: rgba(7, 12, 37, 1);
-    border: solid 1px white;
+    display: flex;
+    height: 7.083vw;
+    bottom: 4.167vw;
+    padding: 2.083vw;
+    gap: 40px;
+    color: rgba(7, 12, 37, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .NavBar * {
-    font-size: 18px;
-    height: 18px;
+    font-size: 0.938vw;
+    height: 0.938vw;
+    color: rgba(7, 12, 37, 1);
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .NavBar *:hover {
@@ -141,17 +138,17 @@ h1 {
 
 .content-size {
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    max-width: 1150px;
+    padding-top: 6.25vw;
+    padding-bottom: 6.25vw;
+    max-width: 59.896vw;
     width: 100%;
     margin: auto;
 }
 
 
 .about {
-    padding-top: 186px;
-    padding-bottom: 415px;
+    padding-top: 9.688vw;
+    padding-bottom: 21.615vw;
     position: relative;
 }
 
@@ -160,108 +157,113 @@ h1 {
     z-index: 2;
 }
 
-.about img {
-    margin-left: 54px;
+.img-flex {
+    gap: 2.813vw;
+}
+
+.img-flex img {
+    width: 5.208vw;
 }
 
 .big-line {
     position: relative;
-    margin-left: 150px;
-    margin-top: -40px;
+    margin-left: 7.813vw;
+    margin-top: -2.083vw;
     z-index: 1;
-    width: 598px;
-    height: 44px;
+    width: 31.146vw;
+    height: 2.292vw;
     border: 0;
-    border-radius: 50px;
+    border-radius: 2.604vw;
     background-color: rgba(190, 200, 255, 1);
-    margin-bottom: 39px;
+    margin-bottom: 2.031vw;
 }
 
 .recent-projects .big-line {
-    margin-left: 465px;
-    width: 668px;
+    margin-left: 24.219vw;
+    width: 34.792vw;
     background-color: #40C9A2;
 }
 
 .about p {
-    margin-bottom: 32px;
+    margin-bottom: 1.667vw;
 }
 
 .skills {
     margin: auto;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 6.25vw;
+    margin-bottom: 6.25vw;
     background-color: white;
 }
 
 .skills img {
-    width: 100px;
-    height: 100px;
-    border-radius: 200px;
-    border-width: 1px;
-    border: 0.67px solid rgba(0, 0, 0, 1)
+    width: 5.208vw;
+    height: 5.208vw;
+    border-radius: 10.417vw;
+    border-width: 0.052vw;
+    border: 0.035vw solid rgba(0, 0, 0, 1)
 }
 
 .skills p {
-    margin-top: 16px;
-    margin-bottom: 58px;
+    margin-top: 0.833vw;
+    margin-bottom: 3.021vw;
 }
 
 .skills .flex {
-    gap: 47px;
+    gap: 2.448vw;
 }
 
 .recent-projects {
+    padding-top: 8.333vw;
     color: white;
 }
 
 .margin-bottom {
-    margin-bottom: 160px;
+    margin-bottom: 8.333vw;
 }
 
 .recent-projects video {
-    width: 606px;
-    height: 402px;
+    width: 31.563vw;
+    height: 20.938vw;
     object-fit: cover;
     background-color: black;
 }
 
 .recent-projects .flex {
-    gap: 40px;
+    gap: 2.083vw;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    width: 504px;
+    width: 26.25vw;
 }
 
 .main-project {
-    margin-bottom: 100px;
+    margin-bottom: 5.208vw;
 }
 
 .main-project h3 {
-    margin-bottom: 24px;
+    margin-bottom: 1.25vw;
 }
 
 .main-project p {
-    font-size: 18px;
+    font-size: 0.938vw;
 }
 
 .flex-tags {
     display: flex;
     margin-top: auto;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 0.26vw;
 }
 
 .main-project button {
-    margin-top: 32px;
+    margin-top: 1.667vw;
     background-color: rgba(190, 200, 255, 1);
     color: rgba(7, 12, 37, 1);
-    font-size: 18px;
-    width: 143px;
-    height: 37px;
+    font-size: 0.938vw;
+    width: 7.448vw;
+    height: 1.927vw;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -275,14 +277,22 @@ h1 {
 
 
 footer p {
-    margin-top: 10px;
-    margin-bottom: 58px;
+    margin-top: 0.521vw;
+    margin-bottom: 3.021vw;
+}
+
+.Contact a {
+    text-align: center;
+    display: block;
+}
+
+footer .flex {
+    gap: 2.083vw;
 }
 
 footer img {
-    margin: auto;
-    margin-left: 40px;
-    width: 56px;
+
+    width: 2.917vw;
 }
 
 
@@ -290,3 +300,4 @@ footer h2 {
     display: flex;
     align-items: center;
 }
+
