@@ -282,7 +282,6 @@ footer p {
 }
 
 footer img {
-<<<<<<< Updated upstream
     margin: auto;
     margin-left: 40px;
     width: 56px;
@@ -293,9 +292,9 @@ footer h2 {
     display: flex;
     align-items: center;
 }
-=======
-    width: 2.917vw;
-}
+
+
+
 
 
 @media (max-width: 425px) {
@@ -304,6 +303,7 @@ footer h2 {
         padding-bottom: 60px;
         max-width: 327px;
     }
+
 
     h1 {
         font-size: 64px;
@@ -440,5 +440,6 @@ footer h2 {
         width: 34px;
     }
     
+
  }
->>>>>>> Stashed changes
+
