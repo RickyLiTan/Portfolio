@@ -8,26 +8,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <header>
         </header>
         <main>
-                <div class="NavBar flex" id = "NAV">
-                    <a onclick="resume()">Resume</a>
-                    <a href = "#CONTACT">Contact</a>
-                    <p onclick="github()">Github</p>
+            <div class="NavBar flex desktop" id = "NAV">
+                <p onclick="resume()">Resume</p>
+                <a href = "#CONTACT">Contact</a>
+                <p onclick="github()">Github</p>
+                <p onclick="linkedin()">LinkedIn</p>
+            </div>
+
+            <div class="mobile-nav hidden" id = "NAV">
+                <input type = "checkbox" id ="check">
+                <label for="check" class = "checkbtn">
+                    <i class="fa fa-bars" ></i>
+                </label>
+                <div class = "open">
+                    <p id ="first" onclick="resume()">Resume</p>
+                    <a id="second" href = "#CONTACT">Contact</a>
+                    <p id="third" onclick="github()">Github</p>
                     <p onclick="linkedin()">LinkedIn</p>
                 </div>
+            </div>
             
             <div class="not-white">
                 <div class = "about content-size" id = ABOUT>
-                    <h1>HI, I'M RICKY<img src = "image/Waving-hand.svg"></h1>
+                    <div class="flex img-flex">
+                        <h1>HI, I'M RICKY</h1>
+                        <img src = "image/Waving-hand.svg">
+                    </div>
                     <hr class = "big-line">
-                    <p>Hi, I’m Ricky, a software development student at SAIT passionate about<br>building efficient, user-friendly applications. In my free time I enjoy </p>
+                    <p>Hi, I’m Ricky, a software development student at SAIT passionate about<br>building efficient, user-friendly applications. In my free time I enjoy learning<br>new skills that increase my work efficency effectively and honing current skills</p>
                     <p>Explore my work to see how I turn ideas into functional code.</p>
-                    <div class="HUH">
+                    <div class="btn">
                         <a href="#PROJECTS">See Projects</a>
                     </div>
                 </div>
@@ -94,7 +111,10 @@
         </main>    
         <footer>
             <div class = "Contact content-size" id="CONTACT">
-                <h2>Interested in talking more?<img src = "image/Rocket.svg"></h2>
+                <div class="flex">
+                    <h2>Interested in talking more?</h2>
+                    <img src = "image/Rocket.svg">
+                </div>
                 <p>Whether you have a project in mind, a question, or just want to connect, feel free to reach out. I’d love to chat</p>
                 <a href="mailto:rickyliqiangtan@gmail.com">Contact me</a>
             </div>
