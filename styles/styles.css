@@ -15,6 +15,25 @@
     src: url(../fonts/HelveticaNeue/HelveticaNeueRoman.otf)
 }
 
+.img-flex img {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;      
+    display: inline-block;
+  }
+  
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+}
+
 /*Nav Bar to top
 Padding change
 Decrease Font size for Project Descritoption
@@ -24,6 +43,10 @@ button hover effect (figma)
 remove underlines for buttons*/
 
 .skills {
+    display: none;
+}
+
+.open {
     display: none;
 }
 
@@ -67,7 +90,7 @@ button, .about a, .Contact a {
 }
 
 .about a:hover, .Contact a:hover {
-    text-decoration: underline;
+    opacity: 70%;
 }
 
 
@@ -120,7 +143,7 @@ h1 {
 }
 
 .NavBar *:hover {
-    text-decoration: underline;
+    opacity: 70%;
     cursor: pointer;
 }
 
@@ -272,7 +295,6 @@ h1 {
     cursor: pointer;
     background-color: rgb(91, 115, 251);
     color: white;
-    text-decoration: underline;
 }
 
 
@@ -300,4 +322,203 @@ footer h2 {
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .content-size {
+        padding-top: 18.82vw;
+        padding-bottom: 14.12vw;
+        max-width: 76.94vw;
+    }
+
+
+    h1 {
+        font-size: 15.06vw;
+        letter-spacing: 0.941vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    h3 {
+        font-size: 4.71vw;
+    }
+
+    p {
+        font-size: 3.76vw;
+    }
+
+    .btn {
+        width: 40.47vw;
+    }
+
+    button, .about a, .Contact a {
+        width: 40.47vw;
+        padding-top: 2.35vw;
+        padding-bottom: 2.35vw;
+        font-size: 3.76vw;
+        border-radius: 47.06vw;
+    }
+
+
+    .mobile-nav {
+        padding: 5vw;
+        color: #fff;
+        position: absolute;
+        right: 0;
+    }
+
+    #check {
+        position: relative;
+        z-index: 3;
+        margin-left: 300px;
+        opacity: 0;
+    }
+
+    .fa {
+        color: rgba(7, 12, 37, 1);
+    }
+    
+    
+    .open {
+        margin-top: 1.302vw;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .open * {
+        color: rgba(7, 12, 37, 1);
+        text-align: right;
+        
+    }
+
+    #check:checked ~ .open {
+        display: flex;
+    }
+
+
+
+    .checkbtn {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .mobile-nav * {
+        font-size: 3.76vw;
+    }
+
+    .about h1 {
+        max-width: 47.06vw;
+    }
+
+    .about {
+        padding-top: 18.82vw;
+        padding-bottom: 28.24vw;
+    }
+
+    .about p {
+        margin-bottom: 4.24vw;
+    }
+
+    .about br {
+        display: none;
+    }
+
+    .img-flex {
+        gap: 2.35vw;
+    }
+
+    .img-flex img {
+        width: 15.06vw;
+    }
+
+    .big-line {
+        margin: 0;
+        margin-top: -3.76vw;
+        margin-left: -1.176vw;
+        height: 4.24vw;
+        width: 42.35vw;
+        margin-bottom: 9.41vw;
+    }
+
+    .recent-projects .big-line {
+        margin-right: auto;
+        width: 77.65vw;
+        margin-left: -1.88vw;
+    }
+
+    .margin-bottom {
+        margin-bottom: 5.65vw;
+    }
+
+    .active, .desktop {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .recent-projects video {
+        width: 76.94vw;
+        height: 47.06vw;
+    }
+
+    .recent-projects .flex {
+        flex-direction: column;
+        gap: 4.71vw;
+    }
+
+    .description {
+        width: 76.94vw;
+    }
+
+    .main-project {
+        margin-bottom: 11.29vw;
+    }
+
+    .main-project h3 {
+        margin-bottom: 4.24vw;
+    }
+
+    .main-project p{
+        font-size: 3.76vw;
+        margin-bottom: 11.29vw;
+    }
+
+    .main-project button {
+        width: 35.76vw;
+        padding-top: 1.65vw;
+        padding-bottom: 1.65vw;
+        font-size: 3.76vw;
+        border-radius: 47.06vw;
+        height: auto;
+        margin-top: 4.24vw;
+    }
+
+    .flex-tags {
+        gap: 1.302vw;
+        margin-bottom: 2.344vw;
+    }
+    
+    .flex-tags p {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        margin-top: 2.35vw;
+        margin-bottom: 4.24vw;
+    }
+
+    footer h2 {
+        width: 54.12vw;
+    }
+
+    footer img {
+        width: 8vw;
+    }
+    
+
+ }
 

@@ -8,17 +8,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <header>
         </header>
         <main>
-            <div class="NavBar flex" id = "NAV">
+            <div class="NavBar flex desktop" id = "NAV">
                 <p onclick="resume()">Resume</p>
                 <a href = "#CONTACT">Contact</a>
                 <p onclick="github()">Github</p>
                 <p onclick="linkedin()">LinkedIn</p>
+            </div>
+
+
+            <div class="mobile-nav hidden" id = "NAV">
+                <input type = "checkbox" id ="check">
+                <label for="check" class = "checkbtn">
+                    <i class="fa fa-bars" ></i>
+                </label>
+                <div class = "open">
+                    <p id ="first" onclick="resume()">Resume</p>
+                    <a id="second" href = "#CONTACT">Contact</a>
+                    <p id="third" onclick="github()">Github</p>
+                    <p onclick="linkedin()">LinkedIn</p>
+                </div>
             </div>
             
             <div class="not-white">
