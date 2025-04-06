@@ -371,8 +371,7 @@ footer h2 {
     .mobile-nav {
         padding: 5vw;
         color: #fff;
-        position: fixed;
-        z-index: 3;
+        position: absolute;
         right: 0;
         top: 0;
         left: 0;
@@ -392,7 +391,7 @@ footer h2 {
     
     
     .open {
-        position: absolute;
+        position: fixed;
         min-height: 100vh;
         z-index: 3;
         right: 0;
