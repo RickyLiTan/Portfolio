@@ -17,3 +17,7 @@ function linkedin() {
 function resume() {
     window.open("https://drive.google.com/file/d/1QEEknXOkpviydpDM2QcrDlnBe2pw-vqy/view?usp=sharing")
 }
+
+function webpos() {
+    window.open("https://github.com/binfang1/foodtrack")
+}
